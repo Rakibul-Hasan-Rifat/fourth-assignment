@@ -26,5 +26,9 @@ function calculation(){
 document.querySelector('button.btn-style').addEventListener('click', function(){
     var firstClassInputValue = parseInt(document.querySelector('#first-class-ticket input').value);
     var economyTypeInputValue = parseInt(document.querySelector('#economy-type-ticket input').value);
-    window.alert('You bought ' + firstClassInputValue + ' ticket of first class and ' + economyTypeInputValue + ' ticket of economy type.')
+    swal({
+        title: "Congratulations! You're ready to travel",
+        text: 'You bought ' + firstClassInputValue + ' ticket of first class and ' + economyTypeInputValue + ' ticket of economy type.',
+        icon: "success"
+      });
 })
